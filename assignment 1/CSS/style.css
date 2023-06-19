@@ -1,0 +1,116 @@
+/* adding styling to our poster */
+
+.movie {
+    background-image: url("../img/posterbackground1.jpeg");/* here i added a background image to the div containing all content that has to be shown on the poster  */
+    background-size:contain; 
+    /* in background image styling i put a no-repeat that only shows the background image only once and i put it to center*/
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 97vh;/* this is used to adjust the height of image */
+    display:flex;
+    align-items:center; 
+    justify-content:center;
+      }
+      body > div > section:nth-child(1){
+        width:100%; /* i gave 100% width to the first section inside the div and then placed them to center using margin left */
+      }
+      /* here i used font size,font family, color to adjust the styling of text and to adjust position i used text align,margin and bottom in all   */
+body > div > section:nth-child(1) > p:nth-child(1){
+    position:absolute;
+  bottom: 151px;
+  margin-left:630px;
+  text-align: center;
+  font-size:7px;
+  color:rgb(23, 87, 23);
+  font-family: 'Merriweather', serif;/* here i used merriweather font */
+}
+body > div > section:nth-child(1) > p:nth-child(2){
+    position:absolute; 
+    margin-left:470px;
+  bottom:1px;
+  font-size:82px;
+  color:rgb(23, 87, 23);
+  
+}
+body > div > section:nth-child(1) > p:nth-child(3){
+    position:absolute;
+  bottom: 65px;
+  margin-left:470px;
+  text-align: center;
+  font-size:16px;
+  color:rgb(23, 87, 23);
+  
+}
+/* i used grid in this to adjust position of text to both sides by giving them same width and giving overall width of 53% */
+body > div > section:nth-child(2){
+    width:53%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  bottom: 70px;
+  font-size:5px;
+  position: absolute;
+  color:rgb(23, 87, 23);
+  font-family: 'Merriweather', serif;
+}
+body > div > section:nth-child(2) > div:nth-child(1){
+   
+    text-align: center;
+}
+body > div > section:nth-child(2) > div:nth-child(2){
+    text-align: center;
+    
+}
+body > div > section:nth-child(3){
+  margin-left: 150px;
+    display: grid;
+    width:40%;
+    grid-template-columns:repeat(2,50%);
+  bottom: 59px;
+  font-size:7px;
+  position: absolute;
+  color:rgb(23, 87, 23);
+  font-family: Merriweather, serif;
+}
+body > div > section:nth-child(3) > div:nth-child(2){
+    padding-left: 24px;
+}
+/* here i used grid to adjust width and then gave same height to section 4 and 5 from bottom to keep them in same line and give different styling */
+body > div > section:nth-child(4){
+    margin-left: 150px;
+    display: grid;
+    width:40%;
+    grid-template-columns:repeat(2,50%);
+    position: absolute;
+    bottom: 49px;
+    font-size:5px;
+    color:rgb(23, 87, 23);
+    font-family: Merriweather, serif;
+  }
+  body > div > section:nth-child(4) > div:nth-child(2){
+    padding-left: 34px;
+  }
+  body > div > section:nth-child(5){
+    margin-left: 200px;
+    display: grid;
+    width:40%;
+    grid-template-columns:repeat(2,50%);
+    position: absolute;
+    bottom: 49px;
+    font-size:7px;
+    color:rgb(23, 87, 23);
+    font-family: Merriweather, serif;
+  }
+  body > div > section:nth-child(5) > div:nth-child(2){
+    padding-left: 33px;
+  }
+  body > div > section:nth-child(6){
+    position: absolute;
+    bottom: 11px;
+    font-size:8px;
+    font-family: Merriweather, serif;
+  }
+  /* i added the link that gve different decoration to the text to remove and overrule it with my rignal font i used text decortion and made it none to remove the difference made by anchor tag */
+  body > div > section:nth-child(6) > p > a{
+    text-decoration: none;
+    color:rgb(23, 87, 23);
+  }
